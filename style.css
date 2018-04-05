@@ -1,0 +1,98 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.content {
+  background-color: #f5f5f5;
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: grey;
+}
+
+.div-input {
+  margin: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+input {
+  height: 50px;
+  width: 85%;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+#enter {
+  height: 50px;
+  width: 15%;
+  cursor: pointer;
+}
+
+hr {
+  color: #fafafa;
+  border: 2px solid #fafafa;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  height: 50px;
+  padding-left: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+span {
+  line-height: 50px;
+}
+
+button {
+  height: 50px;
+  width: 15%;
+  border: none;
+  font-size: 16px;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+.done {
+	text-decoration: line-through;
+  color: lightgrey;
+}
+
+@media all and (min-width: 600px) {
+  .content {
+    width: 50%;
+  }
+
+  input {
+  width: 90%;
+}
+
+#enter {
+  width: 10%;
+}
+
+  button {
+    width: 10%;
+  }
+}
+
