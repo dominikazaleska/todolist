@@ -1,15 +1,15 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #fafafa;
-  display: flex;
   height: 100vh;
   margin: 0;
+  display: flex;
+  background-color: #fffef9;
+  font-family: 'Roboto', sans-serif;
 }
 
 .content {
-  background-color: #f5f5f5;
   width: 90%;
   margin: auto;
+  background-color: #fff0c1;
 }
 
 h1 {
@@ -27,21 +27,23 @@ h1 {
 input {
   height: 50px;
   width: 85%;
-  padding: 0;
+  padding: 0 0 0 20px;
   border: none;
   font-size: 16px;
-  padding-left: 20px;
 }
 
 #enter {
   height: 50px;
   width: 15%;
+  border: none;
+  background-color: grey;
+  color: white;
   cursor: pointer;
 }
 
 hr {
-  color: #fafafa;
-  border: 2px solid #fafafa;
+  border: 2px solid #fffef9;
+  color: #fffef9;
 }
 
 ul {
@@ -50,12 +52,13 @@ ul {
 }
 
 li {
+  height: 50px;
+  margin: 10px;
+  padding-left: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #fafafa;
-  height: 50px;
-  padding-left: 20px;
-  margin: 10px;
+  background-color: #FFC107;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -63,19 +66,19 @@ span {
   line-height: 50px;
 }
 
-button {
+.trash {
   height: 50px;
   width: 15%;
   border: none;
-  font-size: 16px;
   background-color: grey;
   color: white;
+  font-size: 16px;
   cursor: pointer;
 }
 
 .done {
 	text-decoration: line-through;
-  color: lightgrey;
+  background-color: #fed65d;
 }
 
 @media all and (min-width: 600px) {
@@ -84,14 +87,14 @@ button {
   }
 
   input {
-  width: 90%;
-}
+    width: 90%;
+  }
 
-#enter {
-  width: 10%;
-}
+  #enter {
+    width: 10%;
+  }
 
-  button {
+  .trash {
     width: 10%;
   }
 }

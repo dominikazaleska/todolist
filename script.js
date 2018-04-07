@@ -11,6 +11,7 @@ function createListElement() {
 	li.appendChild(span);
 	ul.appendChild(li);	
 	const deleteButton = document.createElement("button");	
+	deleteButton.classList.add("trash");
 	li.appendChild(deleteButton);	
 	const deleteIcon = document.createElement("i");	
 	deleteIcon.classList.add("fas");
@@ -35,12 +36,14 @@ function listItemDone(event) {
 	let itemName;
 	if (event.target.nodeName === "LI") {
 		itemName = event.target.children[0];
+		li = event.target;
 	} 
 	if (event.target.nodeName === "SPAN") {
 		itemName = event.target;
+		li = event.target.parentElement;
 	} 
 	if (event.target.nodeName === "LI" || event.target.nodeName === "SPAN") {
-		itemName.classList.toggle("done");
+		li.classList.toggle("done");
 	}
 }
 
